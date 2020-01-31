@@ -2,7 +2,7 @@
 #define ADD_H
 
 #include <QDialog>
-
+#include <QtSql>
 namespace Ui {
 class Add;
 }
@@ -15,8 +15,15 @@ public:
     explicit Add(QWidget *parent = nullptr);
     ~Add();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Add *ui;
+    QSqlDatabase db;
+
 };
 
 #endif // ADD_H

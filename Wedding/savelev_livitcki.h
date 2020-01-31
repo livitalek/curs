@@ -18,13 +18,10 @@ public:
 private:
     Ui::Savelev_Livitcki *ui;
     Savelev_Livitcki *kl;
-    QSqlDatabase myDB;
-    //select *iselect;
-    //mes *imes;
-    //add *iadd;
-    //addvisit *iaddvisit;
-    //help *ihelp;
+    QSqlDatabase db;
     Add *addBase;
+    QSqlTableModel *model;
+    void reloadTable();
 
 private slots:
     void slotSelect(int flag);

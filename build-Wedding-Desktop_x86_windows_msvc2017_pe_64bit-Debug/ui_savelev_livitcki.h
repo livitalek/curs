@@ -17,6 +17,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
@@ -33,6 +34,7 @@ public:
     QWidget *centralWidget;
     QTableView *tableView;
     QLabel *label;
+    QPushButton *pushButton;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuAbout;
@@ -59,6 +61,9 @@ public:
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(110, 0, 231, 31));
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(10, 40, 91, 91));
         Savelev_Livitcki->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Savelev_Livitcki);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -96,6 +101,7 @@ public:
         actionSave->setText(QApplication::translate("Savelev_Livitcki", "Save", nullptr));
         actionSave_As->setText(QApplication::translate("Savelev_Livitcki", "Save As", nullptr));
         label->setText(QApplication::translate("Savelev_Livitcki", "TextLabel", nullptr));
+        pushButton->setText(QApplication::translate("Savelev_Livitcki", "Add", nullptr));
         menuFile->setTitle(QApplication::translate("Savelev_Livitcki", "File", nullptr));
         menuAbout->setTitle(QApplication::translate("Savelev_Livitcki", "About", nullptr));
         menuHelp->setTitle(QApplication::translate("Savelev_Livitcki", "Help", nullptr));
