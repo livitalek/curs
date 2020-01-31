@@ -73,3 +73,9 @@ void Savelev_Livitcki::reloadTable() {
     ui->tableView->horizontalHeader()->setStretchLastSection(true);
 
 }
+
+void Savelev_Livitcki::on_pushButton_3_clicked()
+{
+    delBase = new Del();
+    delBase->show();
+}

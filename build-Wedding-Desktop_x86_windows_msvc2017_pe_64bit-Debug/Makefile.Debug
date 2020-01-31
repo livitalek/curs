@@ -446,10 +446,6 @@ debug\moc_add.cpp: ..\Wedding\add.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtSql\qsqltablemodel.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtSql\qsqlresult.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtSql\qtsqlversion.h \
-		..\Wedding\savelev_livitcki.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QMainWindow \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qmainwindow.h \
-		..\Wedding\add.h \
 		debug\moc_predefs.h \
 		C:\Qt\5.12.6\msvc2017_64\bin\moc.exe
 	C:\Qt\5.12.6\msvc2017_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include C:/Users/761/Desktop/Curs/build-Wedding-Desktop_x86_windows_msvc2017_pe_64bit-Debug/debug/moc_predefs.h -IC:/Qt/5.12.6/msvc2017_64/mkspecs/win32-msvc -IC:/Users/761/Desktop/Curs/Wedding -IC:/Qt/5.12.6/msvc2017_64/include -IC:/Qt/5.12.6/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.6/msvc2017_64/include/QtGui -IC:/Qt/5.12.6/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.6/msvc2017_64/include/QtSql -IC:/Qt/5.12.6/msvc2017_64/include/QtCore -I. -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" ..\Wedding\add.h -o debug\moc_add.cpp
@@ -827,7 +823,7 @@ debug\moc_savelev_livitcki.cpp: ..\Wedding\savelev_livitcki.h \
 		..\Wedding\add.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QDialog \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qdialog.h \
-		..\Wedding\savelev_livitcki.h \
+		..\Wedding\del.h \
 		debug\moc_predefs.h \
 		C:\Qt\5.12.6\msvc2017_64\bin\moc.exe
 	C:\Qt\5.12.6\msvc2017_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include C:/Users/761/Desktop/Curs/build-Wedding-Desktop_x86_windows_msvc2017_pe_64bit-Debug/debug/moc_predefs.h -IC:/Qt/5.12.6/msvc2017_64/mkspecs/win32-msvc -IC:/Users/761/Desktop/Curs/Wedding -IC:/Qt/5.12.6/msvc2017_64/include -IC:/Qt/5.12.6/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.6/msvc2017_64/include/QtGui -IC:/Qt/5.12.6/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.6/msvc2017_64/include/QtSql -IC:/Qt/5.12.6/msvc2017_64/include/QtCore -I. -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" ..\Wedding\savelev_livitcki.h -o debug\moc_savelev_livitcki.cpp
@@ -1124,9 +1120,6 @@ debug\add.obj: ..\Wedding\add.cpp ..\Wedding\add.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtSql\qsqltablemodel.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtSql\qsqlresult.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtSql\qtsqlversion.h \
-		..\Wedding\savelev_livitcki.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QMainWindow \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qmainwindow.h \
 		ui_add.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QMessageBox \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qmessagebox.h \
@@ -1503,6 +1496,7 @@ debug\main.obj: ..\Wedding\main.cpp ..\Wedding\savelev_livitcki.h \
 		..\Wedding\add.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QDialog \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qdialog.h \
+		..\Wedding\del.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QApplication \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qapplication.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qdesktopwidget.h \
@@ -1775,33 +1769,14 @@ debug\savelev_livitcki.obj: ..\Wedding\savelev_livitcki.cpp ..\Wedding\savelev_l
 		..\Wedding\add.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QDialog \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qdialog.h \
+		..\Wedding\del.h \
 		ui_savelev_livitcki.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtSql\QSqlDatabase \
-		C:\Qt\5.12.6\msvc2017_64\include\QtSql\QSqlQuery \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QAbstractButton \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qabstractbutton.h \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QMessageBox \
 		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qmessagebox.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QCalendarWidget \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qcalendarwidget.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\QStandardItemModel \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\qstandarditemmodel.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\QStandardItem \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QFileDialog \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qfiledialog.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtCore\QModelIndex \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QTextEdit \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\qtextedit.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\qtextdocument.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\qtextoption.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\qtextcursor.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\qtextformat.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtGui\qpen.h \
-		C:\Qt\5.12.6\msvc2017_64\include\QtCore\QTextStream \
 		C:\Qt\5.12.6\msvc2017_64\include\QtGui\QCloseEvent \
-		C:\Qt\5.12.6\msvc2017_64\include\QtWidgets\QStyle \
 		C:\Qt\5.12.6\msvc2017_64\include\QtCore\QDebug \
-		C:\Qt\5.12.6\msvc2017_64\include\QtSql\QSqlTableModel \
 		C:\Qt\5.12.6\msvc2017_64\include\QtCore\QTimer
 
 debug\moc_add.obj: debug\moc_add.cpp 

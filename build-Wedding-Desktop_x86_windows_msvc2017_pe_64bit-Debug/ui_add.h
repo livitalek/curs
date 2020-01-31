@@ -32,11 +32,9 @@ public:
     QLabel *label_3;
     QLineEdit *lineEdit_2;
     QLabel *label_2;
-    QLineEdit *lineEdit_3;
     QLabel *label_4;
     QLineEdit *lineEdit_4;
     QLabel *label_5;
-    QLineEdit *lineEdit_5;
     QLabel *label_6;
     QComboBox *comboBox;
     QLabel *label_7;
@@ -47,6 +45,8 @@ public:
     QComboBox *comboBox_3;
     QLabel *label_10;
     QComboBox *comboBox_4;
+    QLineEdit *lineEdit_5;
+    QLineEdit *lineEdit_3;
     QLabel *label_11;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
@@ -87,11 +87,6 @@ public:
 
         formLayout->setWidget(3, QFormLayout::LabelRole, label_2);
 
-        lineEdit_3 = new QLineEdit(formLayoutWidget);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
-
-        formLayout->setWidget(3, QFormLayout::FieldRole, lineEdit_3);
-
         label_4 = new QLabel(formLayoutWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
@@ -106,11 +101,6 @@ public:
         label_5->setObjectName(QString::fromUtf8("label_5"));
 
         formLayout->setWidget(5, QFormLayout::LabelRole, label_5);
-
-        lineEdit_5 = new QLineEdit(formLayoutWidget);
-        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
-
-        formLayout->setWidget(5, QFormLayout::FieldRole, lineEdit_5);
 
         label_6 = new QLabel(formLayoutWidget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
@@ -169,6 +159,16 @@ public:
         comboBox_4->setObjectName(QString::fromUtf8("comboBox_4"));
 
         formLayout->setWidget(10, QFormLayout::FieldRole, comboBox_4);
+
+        lineEdit_5 = new QLineEdit(formLayoutWidget);
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+
+        formLayout->setWidget(3, QFormLayout::FieldRole, lineEdit_5);
+
+        lineEdit_3 = new QLineEdit(formLayoutWidget);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+
+        formLayout->setWidget(5, QFormLayout::FieldRole, lineEdit_3);
 
         label_11 = new QLabel(Add);
         label_11->setObjectName(QString::fromUtf8("label_11"));

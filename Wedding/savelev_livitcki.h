@@ -30,6 +30,7 @@ private slots:
     void slotSelect(int flag);
     void closeEvent(QCloseEvent *event);
     void on_pushButton_clicked();
+    void on_pushButton_3_clicked();
 };
 
 #endif // SAVELEV_LIVITCKI_H

@@ -13,8 +13,12 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -23,9 +27,13 @@ class Ui_Del
 public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
-    QRadioButton *radioButton;
+    QWidget *widget;
+    QGridLayout *gridLayout;
     QRadioButton *radioButton_2;
     QFrame *line;
+    QRadioButton *radioButton;
+    QLabel *label;
+    QLineEdit *lineEdit;
 
     void setupUi(QDialog *Del)
     {
@@ -38,18 +46,41 @@ public:
         pushButton_2 = new QPushButton(Del);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(310, 290, 93, 28));
-        radioButton = new QRadioButton(Del);
-        radioButton->setObjectName(QString::fromUtf8("radioButton"));
-        radioButton->setGeometry(QRect(20, 10, 83, 16));
-        radioButton->setChecked(true);
-        radioButton_2 = new QRadioButton(Del);
+        widget = new QWidget(Del);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(10, 30, 491, 251));
+        gridLayout = new QGridLayout(widget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        radioButton_2 = new QRadioButton(widget);
         radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
-        radioButton_2->setGeometry(QRect(20, 160, 101, 18));
-        line = new QFrame(Del);
+
+        gridLayout->addWidget(radioButton_2, 3, 0, 1, 2);
+
+        line = new QFrame(widget);
         line->setObjectName(QString::fromUtf8("line"));
-        line->setGeometry(QRect(10, 140, 501, 20));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
+
+        gridLayout->addWidget(line, 2, 0, 1, 2);
+
+        radioButton = new QRadioButton(widget);
+        radioButton->setObjectName(QString::fromUtf8("radioButton"));
+        radioButton->setChecked(true);
+
+        gridLayout->addWidget(radioButton, 0, 0, 1, 2);
+
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        gridLayout->addWidget(label, 1, 0, 1, 1);
+
+        lineEdit = new QLineEdit(widget);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setEnabled(true);
+
+        gridLayout->addWidget(lineEdit, 1, 1, 1, 1);
+
 
         retranslateUi(Del);
 
@@ -61,8 +92,9 @@ public:
         Del->setWindowTitle(QApplication::translate("Del", "Dialog", nullptr));
         pushButton->setText(QApplication::translate("Del", "Supply", nullptr));
         pushButton_2->setText(QApplication::translate("Del", "Cancel", nullptr));
-        radioButton->setText(QApplication::translate("Del", "Delete keys:", nullptr));
-        radioButton_2->setText(QApplication::translate("Del", "Delete name:", nullptr));
+        radioButton_2->setText(QApplication::translate("Del", "Delete by name:", nullptr));
+        radioButton->setText(QApplication::translate("Del", "Delete by ID:", nullptr));
+        label->setText(QApplication::translate("Del", "Enter ID:", nullptr));
     } // retranslateUi
 
 };
