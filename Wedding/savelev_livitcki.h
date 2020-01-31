@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QtSql>
 #include "add.h"
+#include "del.h"
 namespace Ui {
 class Savelev_Livitcki;
 }
@@ -20,7 +21,9 @@ private:
     Savelev_Livitcki *kl;
     QSqlDatabase db;
     Add *addBase;
+    Del *delBase;
     QSqlTableModel *model;
+public slots:
     void reloadTable();
 
 private slots:

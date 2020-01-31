@@ -1,21 +1,10 @@
 #include "savelev_livitcki.h"
 #include "ui_savelev_livitcki.h"
-#include "QtSql/QSqlDatabase"
-#include "QSqlQuery"
 #include <QAbstractButton>
 #include <QMessageBox>
-#include <QCalendarWidget>
-#include "QStandardItemModel"
-#include "QStandardItem"
-#include <QFileDialog>
-#include <QModelIndex>
-#include <QTextEdit>
-#include <QFileDialog>
-#include <QTextStream>
 #include <QCloseEvent>
-#include <QStyle>
 #include <QDebug>
-#include <QSqlTableModel>
+#include <QTimer>
 
 Savelev_Livitcki::Savelev_Livitcki(QWidget *parent) :
     QMainWindow(parent),
@@ -33,19 +22,14 @@ Savelev_Livitcki::Savelev_Livitcki(QWidget *parent) :
     ui->label->setText("List of Weddings");
 
     model = new QSqlTableModel(nullptr, db);
-    model->setTable("WeddingInfo");
-    model->select();
-    ui->tableView->horizontalHeader()->setDefaultAlignment(Qt::AlignCenter);
-    ui->tableView->verticalHeader()->setDefaultAlignment(Qt::AlignCenter);
-    ui->tableView->setModel(model);
-    ui->tableView->resizeRowsToContents();
-    ui->tableView->resizeColumnsToContents();
-    ui->tableView->horizontalHeader()->setStretchLastSection(true);
-
+    QTimer *timer = new QTimer();
+    connect(timer, SIGNAL(timeout()), this, SLOT(reloadTable()));
+    timer->start(1000);
     QPalette Pal(palette());
     Pal.setColor(QPalette::Background, Qt::darkCyan);
     setAutoFillBackground(true);
     setPalette(Pal);
+
 }
 
 
@@ -72,9 +56,8 @@ Savelev_Livitcki::~Savelev_Livitcki()
 
 void Savelev_Livitcki::on_pushButton_clicked()
 {
-    addBase = new Add(this);
+    addBase = new Add();
     addBase->show();
-    reloadTable();
 }
 
 void Savelev_Livitcki::reloadTable() {

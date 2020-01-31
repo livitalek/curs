@@ -38,7 +38,9 @@ void Add::on_pushButton_clicked()
         mb->setWindowTitle("Ошибка!");
         mb->setText("Запрос составлен неверно");
         mb->show();
+
     } else {
+
         close();
     }
 

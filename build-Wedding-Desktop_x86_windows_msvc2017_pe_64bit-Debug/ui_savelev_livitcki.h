@@ -35,6 +35,8 @@ public:
     QTableView *tableView;
     QLabel *label;
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuAbout;
@@ -64,6 +66,12 @@ public:
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(10, 40, 91, 91));
+        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(10, 140, 91, 91));
+        pushButton_3 = new QPushButton(centralWidget);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(10, 240, 91, 91));
         Savelev_Livitcki->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Savelev_Livitcki);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -102,6 +110,8 @@ public:
         actionSave_As->setText(QApplication::translate("Savelev_Livitcki", "Save As", nullptr));
         label->setText(QApplication::translate("Savelev_Livitcki", "TextLabel", nullptr));
         pushButton->setText(QApplication::translate("Savelev_Livitcki", "Add", nullptr));
+        pushButton_2->setText(QApplication::translate("Savelev_Livitcki", "Edit", nullptr));
+        pushButton_3->setText(QApplication::translate("Savelev_Livitcki", "Delete", nullptr));
         menuFile->setTitle(QApplication::translate("Savelev_Livitcki", "File", nullptr));
         menuAbout->setTitle(QApplication::translate("Savelev_Livitcki", "About", nullptr));
         menuHelp->setTitle(QApplication::translate("Savelev_Livitcki", "Help", nullptr));
